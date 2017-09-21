@@ -1,0 +1,69 @@
+~~~~~~~ Program to calculate first order derivative ~~~~~~~
+Rules:
+1. Input function should  only be written in x.
+2. Avoid use of trigonometric and inverse trigonometric function.
+3. Only use natural log and symbol used is '&'.
+4. End your input function with '$'.
+
+Enter f(x):x$
+Original f(x) = x
+Simplified f(x) = x
+Derived f'(x) = 1
+Reduced f'(x) = 1
+Constant Expression Evaluation of Reduced f'(x) = 1
+
+Enter f(x):2*x+y$
+Original f(x) = ((2*x)+y)
+Simplified f(x) = ((2*x)+y)
+Derived f'(x) = (((0*x)+(2*1))+0)
+Reduced f'(x) = 2
+Constant Expression Evaluation of Reduced f'(x) = 2
+
+Enter f(x):x*(2*x)+5*b-4*x$
+Original f(x) = (((x*(2*x))+(5*b))-(4*x))
+Simplified f(x) = (((x*(2*x))+(5*b))-(4*x))
+Derived f'(x) = ((((1*(2*x))+(x*((0*x)+(2*1))))+((0*b)+(5*0)))-((0*x)+(4*1)))
+Reduced f'(x) = (((2*x)+(x*2))-4)
+
+Enter f(x):(3+2*x)/(x*3+9*x)-x*(7+b-7*x)$
+Original f(x) = (((3+(2*x))/((x*3)+(9*x)))-(x*((7+b)-(7*x))))
+Simplified f(x) = (((3+(2*x))/((x*3)+(9*x)))-(x*((7+b)-(7*x))))
+Derived f'(x) = (((((0+((0*x)+(2*1)))*((x*3)+(9*x)))-((3+(2*x))*(((1*3)+(x*0))+((0*x)+(9*1)))))/(((x*3)+(9*x))*((x*3)+(9*x))))-((1*((7+b)-(7*x)))+(x*((0+0)-((0*x)+(7*1))))))
+Reduced f'(x) = ((((2*((x*3)+(9*x)))-((3+(2*x))*12))/(((x*3)+(9*x))*((x*3)+(9*x))))-(((7+b)-(7*x))+(x*-7)))
+
+Enter f(x):2*x+x*3+5+6*x$
+Original f(x) = ((((2*x)+(x*3))+5)+(6*x))
+Simplified f(x) = ((((2*x)+(x*3))+5)+(6*x))
+Derived f'(x) = (((((0*x)+(2*1))+((1*3)+(x*0)))+0)+((0*x)+(6*1)))
+Reduced f'(x) = 11
+Constant Expression Evaluation of Reduced f'(x) = 11
+
+Enter f(x):2*(3*x+7*x)$
+Original f(x) = (2*((3*x)+(7*x)))
+Simplified f(x) = (2*((3*x)+(7*x)))
+Derived f'(x) = ((0*((3*x)+(7*x)))+(2*(((0*x)+(3*1))+((0*x)+(7*1)))))
+Reduced f'(x) = (2*10)
+Constant Expression Evaluation of Reduced f'(x) = 20
+
+Enter f(x):3*x+2
+<!><!>Error. Insert $ at the end of expression
+
+Original f(x) = ((3*x)+2)
+Simplified f(x) = ((3*x)+2)
+Derived f'(x) = (((0*x)+(3*1))+0)
+Reduced f'(x) = 3
+Constant Expression Evaluation of Reduced f'(x) = 3
+
+Enter f(x):3*(2*x+x^2
+) expected
+
+<!><!>Error. Insert $ at the end of expression
+
+Original f(x) = (3*((2*x)+(x^2)))
+Simplified f(x) = (3*((2*x)+(x^2)))
+Derived f'(x) = ((0*((2*x)+(x^2)))+(3*(((0*x)+(2*1))+((1*(2*(x^(2-1))))+(((&x)*0)*(x^2))))))
+Reduced f'(x) = (3*(2+(2*x)))
+
+Enter f(x):a+b+c+2*x+!$
+Illegal character '!'
+
